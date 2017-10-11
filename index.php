@@ -29,7 +29,7 @@
 <body>
 	<form name ="hashform" method="post" onsubmit="return validateform()">
 		<label>Input string: </label>
-		<input type="text" name="input">
+		<input type="text" name="input" required oninvalid="this.setCustomValidity('You can\'t leave the input string blank!')">
 		<input type="submit" name="submit" value="Hash!">
 	</form>
 	<br>
@@ -44,19 +44,5 @@
 		<?php	}
 		 ?>
 	</div>
-	<script>
-		function validateform()
-		{
-			var input=document.hashform.input.value; 
-			if (input=="")
-			{
-				alert("You can't leave the input string blank!");
-				return false;
-			}
-			else
-				return true;
-			
-		}
-	</script>
 </body>
 </html>
