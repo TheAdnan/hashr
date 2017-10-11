@@ -18,9 +18,23 @@
 		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Orbitron" rel="stylesheet">
+	<script>
+		function validateform()
+		{
+			var input=document.hashform.input.value; 
+			if (input=="")
+			{
+				alert("You can't leave the input string blank!");
+				return false;
+			}
+			else
+				return true;
+			
+		}
+	</script>
 </head>
 <body>
-	<form method="post">
+	<form name ="hashform" method="post" onsubmit="return validateform()">
 		<label>Input string: </label>
 		<input type="text" name="input">
 		<input type="submit" name="submit" value="Hash!">
@@ -39,5 +53,3 @@
 	</div>
 </body>
 </html>
-
-
