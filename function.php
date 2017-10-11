@@ -1,8 +1,15 @@
 <?php
 	$hashes = array();
+	$hashTime = array();
 	if(isset($_POST['submit']) && !empty($_POST['input'])){
 		foreach (hash_algos() as $algo) {
-			array_push($hashes, hash($algo, $_POST['input']));
+
+            $start = microtime(true);
+		    $hash = hash($algo, $_POST['input']);
+            $timeElapsed = microtime(true) - $start;
+            $hashTime[$algo] = $timeElapsed;
+
+			array_push($hashes, $hash);
 		}
 	}
 ?>
