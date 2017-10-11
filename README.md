@@ -1,0 +1,2 @@
+# hashr
+Password hash generator
