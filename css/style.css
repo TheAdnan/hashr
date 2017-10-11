@@ -1,0 +1,97 @@
+html{
+  font-family: Orbitron;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+.container{
+  background-color: #E0E0E0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px auto;
+  grid-gap: 10px 10px;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+
+.card{
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 3px 0.3px rgba(0,0,0,0.4);
+}
+
+.headform{
+  display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 30px;
+  justify-content: center;
+}
+
+form label{
+  display: block;
+  padding: 20px;
+  color: #009688;
+  font-weight: 800;
+}
+
+form input[type=text]{
+  height: 50px;
+  width: 300px;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid #009688;
+
+}
+
+form input[type=submit]
+{
+  background-color: #ccc;
+  border:none;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -3px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #009688;
+}
+
+.item-card{
+  padding: 10px;
+  overflow: hidden;
+}
+
+.algo_name{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+
+.text_style{
+  color: #009688;
+  font-family: Nunito;
+  word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 900px)
+{
+  .item-card{
+    grid-column: 1 / span 2;
+  }
+
+  form input[type=text]
+  {
+    width: 200px;
+  }
+  form input[type=submit]
+  {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
