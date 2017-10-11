@@ -8,8 +8,7 @@
 		    $hash = hash($algo, $_POST['input']);
             $timeElapsed = microtime(true) - $start;
             $hashTime[$algo] = $timeElapsed;
-
-			array_push($hashes, $hash);
+			$hashes[$algo] = $hash;
 		}
 	}
 ?>

@@ -35,10 +35,10 @@
 	<br>
 	<div class="hashes">
 		<?php 
-			foreach (hash_algos() as $i => $algo) { ?>
+			foreach (hash_algos() as $algo) { ?>
 				<div class="hash_algo">
 					<p class="algo"><b><?= $algo; ?></b></p>
-					<p>Hash: <span style="font-family: Nunito"><?= $hashes[$i]; ?></span></p>
+					<p>Hash: <span style="font-family: Nunito"><?= $hashes[$algo]; ?></span></p>
                     <small>Execution time: <span style="font-family: Nunito"><?= number_format($hashTime[$algo] * 1000000000, 0); ?> nanoseconds</span></small>
 				</div>
 		<?php	}
