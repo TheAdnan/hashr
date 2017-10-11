@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://unpkg.com/element-ui/lib/theme-default/index.css');
+
+* {
+    box-sizing: border-box;
+    color: #fff !important;
+}
+
+html, #hashInput {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 17px;
+    background-color: #1F2D3D;
+}
+
+#hashInput {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.el-table {
+    font-size: inherit;
+}
+
+.el-table_1_column_3,
+.el-table_1_column_3 .cell {
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.el-table__header-wrapper thead div,
+.el-table td, .el-table th.is-leaf {
+    background-color: #005500;
+}
+
+.el-table,
+.el-table tr,
+.el-table--striped .el-table__body tr.el-table__row--striped td,
+.el-table__empty-text {
+    background-color: #003300;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background: #000000;
+}
+
+tbody .el-table_1_column_2 * {
+    text-align: right;
+}
