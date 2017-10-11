@@ -18,20 +18,6 @@
 		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Orbitron" rel="stylesheet">
-	<script>
-		function validateform()
-		{
-			var input=document.hashform.input.value; 
-			if (input=="")
-			{
-				alert("You can't leave the input string blank!");
-				return false;
-			}
-			else
-				return true;
-			
-		}
-	</script>
 </head>
 <body>
 	<form name ="hashform" method="post" onsubmit="return validateform()">
@@ -51,5 +37,19 @@
 		<?php	}
 		 ?>
 	</div>
+	<script>
+		function validateform()
+		{
+			var input=document.hashform.input.value; 
+			if (input=="")
+			{
+				alert("You can't leave the input string blank!");
+				return false;
+			}
+			else
+				return true;
+			
+		}
+	</script>
 </body>
 </html>
