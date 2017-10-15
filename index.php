@@ -13,7 +13,7 @@
 	<form name ="hashform" method="post" onsubmit="return validateform()">
 		<label>Input string: </label>
 		<input type="text" name="input" required oninvalid="this.setCustomValidity('You can\'t leave the input string blank!')">
-		<input type="submit" name="submit" value="Hash!">
+		<input type="submit" class="submit" name="submit" value="Hash!">
 	</form>
 	<br>
 	<div class="hashes">

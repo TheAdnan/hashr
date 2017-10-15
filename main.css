@@ -27,6 +27,36 @@ html{
   font-weight: bold;
 }
 
+.submit{
+  background-color: green;
+  border: 2px solid green;
+  color: #fff;
+  width: 100px;
+  margin-left: 20px;
+  font-family: Orbitron;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+
+}
+
+.submit:hover{
+  cursor: pointer;
+  font-size: 15px;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
 small{
   font-size: 12px;
 }
