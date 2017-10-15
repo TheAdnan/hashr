@@ -21,8 +21,8 @@
 			foreach (hash_algos() as $algo) { ?>
 				<div class="hash_algo">
 					<p class="algo"><b><?= $algo; ?></b></p>
-					<p>Hash: <span style="font-family: Nunito"><?= $hashes[$algo]; ?></span></p>
-                    <small>Execution time: <span style="font-family: Nunito"><?= number_format($hashTime[$algo] * 1000000000, 0); ?> nanoseconds</span></small>
+					<p class="hash">Hash: <span style="font-family: Nunito"><?= $hashes[$algo]; ?></span></p>
+                    <small>Execution time: <span class="exec-time" style="font-family: Nunito"><?= number_format($hashTime[$algo] * 1000000000, 0); ?> nanoseconds</span></small>
 				</div>
 		<?php	}
 		 ?>
