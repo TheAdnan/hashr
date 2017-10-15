@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once("function.php");
  ?>
 <!DOCTYPE html>
@@ -6,24 +6,7 @@
 <head>
 	<title>Hashr</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<style type="text/css">
-		html{
-			font-family: Orbitron;
-			background: black;
-			color: #1be71b;
-		}
-		.hashes {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 10px;
-			grid-auto-columns: minmax(20%, 30%);
-		}
-
-		.hash_algo{
-			border: 0.5px solid rgb(44, 140, 49);
-			padding: 10px;
-		}
-	</style>
+	<link href="main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Orbitron" rel="stylesheet">
 </head>
 <body>
@@ -34,7 +17,7 @@
 	</form>
 	<br>
 	<div class="hashes">
-		<?php 
+		<?php
 			foreach (hash_algos() as $algo) { ?>
 				<div class="hash_algo">
 					<p class="algo"><b><?= $algo; ?></b></p>
