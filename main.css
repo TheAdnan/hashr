@@ -6,21 +6,20 @@ html{
 .hashes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-columns: minmax(20%, 30%);
+  grid-gap: 12px;
 }
 
 .hash_algo{
-  border: 0.5px solid rgb(44, 140, 49);
+  border: 0.6px solid rgb(44, 140, 49);
   padding: 10px;
 }
 
 .algo{
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .hash{
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .exec-time{
