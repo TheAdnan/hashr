@@ -43,10 +43,61 @@ html, #hashInput {
     background-color: #003300;
 }
 
+.el-table__empty-block {
+    max-width: 100%;
+}
+
 .el-table--enable-row-hover .el-table__body tr:hover > td {
     background: #000000;
 }
 
 tbody .el-table_1_column_2 * {
     text-align: right;
+}
+
+@media screen and (max-width: 500px)
+{
+    #hashr {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .el-table__header-wrapper,
+    .el-table__body-wrapper colgroup {
+        display: none;
+    }
+    .el-table__body-wrapper,
+    .el-table__body-wrapper table {
+        width: 100%!important;
+    }
+    .el-table__body-wrapper tr,
+    .el-table__body-wrapper td {
+        display: block;
+        max-width: 100%;
+    }
+    .el-table__body-wrapper td {
+        padding: 10px;
+        height: auto;
+        border-bottom: 0;
+    }
+    .el-table__body-wrapper td::before {
+        font-weight: bold;
+    }
+    .el-table__body-wrapper td:nth-child(3) {
+        -webkit-user-select: all;  /* Chrome 49+ */
+        -moz-user-select: all;     /* Firefox 43+ */
+        -ms-user-select: all;      /* No support yet */
+        user-select: all;          /* Likely future */
+    }
+    .el-table__body-wrapper td:nth-child(1)::before {
+        content: 'Algorithm';
+    }
+    .el-table__body-wrapper td:nth-child(2)::before {
+        content: 'Hash Speed(ms)';
+    }
+    .el-table__body-wrapper td:nth-child(3)::before {
+        content: 'Hashed String';
+    }
+    .el-table__body-wrapper .cell {
+        text-align: left;
+    }
 }
